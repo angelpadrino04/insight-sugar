@@ -8,7 +8,7 @@ import seaborn as sns
 
 
 def train_and_evaluate():
-    X_train, y_train, X_val, y_val, X_test, y_test, = load_and_preprocess_data()
+    X_train, y_train, X_val, y_val, X_test, y_test, scaler = load_and_preprocess_data()
 
     input_size = X_train.shape[1]
     model_configs = [
